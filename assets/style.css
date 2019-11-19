@@ -1,0 +1,45 @@
+.opt{
+    color: rgb(248, 164, 155);
+    background-color: black;
+    margin: 10px;
+}
+
+/* .containter{
+    margin: 150px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 50px;
+    padding: 50px;
+    width: auto;
+    height: auto;
+    background-color: salmon;
+}
+
+#startbutton{
+    background-color: coral;
+}
+
+h2{
+    color: white;
+}
+
+.navbar{
+    background-color: slategrey;
+    padding: 15px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+a{
+    text-align: center;
+    font-size: 22px;
+}

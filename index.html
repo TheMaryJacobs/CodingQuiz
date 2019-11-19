@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pop Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                     <li class="nav-item">
+                      <a class="nav-link" href="#">View High Scores</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Coding Quiz<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a id="timer" class="nav-link" href="#">Timer</a>
+                    </li>
+                </ul>
+        </nav>
+    <div id="start-container" class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col d-flex justify-content-center align-items-center">
+              <h1>Coding Quiz</h1>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <p>This is a pop coding quiz. A pop quiz to quiz you on your coding. 
+                  Answer the questions as quickly as possible to recieve the most points. 
+                  Finishg the quiz before the timer runs out
+              </p>
+            </div>     
+        </div>
+        <div class="row mt-5 mb-5">
+          <div class="col d-flex justify-content-center align-items-center">
+            <button type="button" id="startbutton" class="btn btn-lg">
+              Start Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz" class="container d-none align-items-center" >
+        <div class="row">
+            <div class="col-12">
+                <h2>Quiz Question</h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row d-flex">
+                <div class="col-6">
+                    <button id="opt-js" class="opt btn-lg btn-dark">Option 1</button>
+                    <button id="opt-js" class="opt btn-lg btn-dark">Option 2</button>
+                </div>
+        </div>
+        <div class="row d-flex">
+                <div class="col-6">
+                    <button id="opt-js" class="opt btn-lg btn-dark">Option 3</button>
+                    <button id="opt-js" class="opt btn-lg btn-dark">Option 4</button>
+                </div>
+        </div>
+    </div>
+
+<script src="./assets/quiz.js">
+</script>
+
+</body>
+
+
+</html>
