@@ -15,7 +15,7 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
-// create our questions array 
+// create our questions array // When I tried to link them from outside, everything broke.... sorry.
 let questions = [
     {question : "Which of the following tags will display paragraph text?",
         choiceA : "< para >",
@@ -23,6 +23,7 @@ let questions = [
         choiceC : "< p/ >",
         choiceD : "< graph/ >",
         correct : "C"},
+
     {question : "Where do links to stylesheets belong?",
         choiceA : "< div/ >",
         choiceB : "< head/ >",
@@ -36,12 +37,14 @@ let questions = [
         choiceC : "Never in Javascript",
         choiceD : "All of the Above",
         correct : "D"},
+
     {question : "Where is the best place to find bootstrap documentation?",
       choiceA : "GetBootstrap.com",
       choiceB : "MDN",
       choiceC : "W3 Schools",
       choiceD : "StackOverflow",
       correct : "A"},
+
     {question : "What is href?",
         choiceA : "Attribute on a link",
         choiceB : "Used to link in outside information",
@@ -64,15 +67,14 @@ let score = 0;
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
-    
+    //imports the question and options from the array, into the HTML slots
     question.innerHTML = "<p>"+ q.question +"</p>";
-    // qImg.innerHTML = "<img src="+ q.imgSrc +">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
 }
-
+//start the quiz
 start.addEventListener("click",startQuiz);
 
 // hide the start container elements, display the quiz, and begin the first timer.
@@ -87,7 +89,7 @@ function startQuiz(){
     TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
-// render progress
+// render correct and incorrect answers in the progress icons 
 function renderProgress(){
     for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
@@ -95,7 +97,6 @@ function renderProgress(){
 }
 
 // counter render
-
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
@@ -103,7 +104,7 @@ function renderCounter(){
         count++
     }else{
         count = 0;
-        // change progress color to red
+        // change the progress icon to red 
         answerIsWrong();
         if(runningQuestion < lastQuestion){
             runningQuestion++;
@@ -116,7 +117,7 @@ function renderCounter(){
     }
 }
 
-// checkAnwer
+// check answers 
 
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
@@ -157,6 +158,6 @@ function scoreRender(){
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
     
-
+    // display the score at the end
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }

@@ -1,42 +1,36 @@
 let questions = [
-  {
-      question : "What is my middle name",
-      choiceA : "Katherine",
-      choiceB : "Ann",
-      choiceC : "Grace",
-      choiceD : "Frances",
-      correct : "D"
-  },
-  {
-      question : "How many cats do I have?",
-      choiceA : "None",
-      choiceB : "One",
-      choiceC : "Two",
-      choiceD : "Seven",
-      correct : "C"
-  },
-  {
-      question : "Where have I lived?",
-      choiceA : "San Diego",
-      choiceB : "Rome",
-      choiceC : "Edina",
+  {question : "Which of the following tags will display paragraph text?",
+      choiceA : "< para >",
+      choiceB : "< a/ >",
+      choiceC : "< p/ >",
+      choiceD : "< graph/ >",
+      correct : "C"},
+
+  {question : "Where do links to stylesheets belong?",
+      choiceA : "< div/ >",
+      choiceB : "< head/ >",
+      choiceC : "< script/ >",
+      choiceD : "< styles >",
+      correct : "B"},
+
+  {question : "Where do we apply classes?",
+      choiceA : "On HTML objects",
+      choiceB : "within CSS to style",
+      choiceC : "Never in Javascript",
       choiceD : "All of the Above",
-      correct : "D"
-  }
-  {
-    question : "What is my favorite sport?",
-    choiceA : "None",
-    choiceB : "Golf",
-    choiceC : "Football",
-    choiceD : "Competitive Cheerleading",
-    correct : "A"
-}
-{
-  question : "What am I on the Board of Directors of?",
-  choiceA : "Lakewinds Food Co-op",
-  choiceB : "YouthFarm",
-  choiceC : "YMCA Camp Warren",
-  choiceD : "None",
-  correct : "C"
-}
+      correct : "D"},
+
+  {question : "Where is the best place to find bootstrap documentation?",
+    choiceA : "GetBootstrap.com",
+    choiceB : "MDN",
+    choiceC : "W3 Schools",
+    choiceD : "StackOverflow",
+    correct : "A"},
+    
+  {question : "What is href?",
+      choiceA : "Attribute on a link",
+      choiceB : "Used to link in outside information",
+      choiceC : "Connects outside stylesheets to HTML",
+      choiceD : "All of the above",
+      correct : "D"},
 ];
