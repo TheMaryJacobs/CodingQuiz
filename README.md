@@ -14,8 +14,7 @@ https://www.youtube.com/watch?v=49pYIMygIcU
 In-Class Activities
 
 ## Screenshots
-!(./assets/screenshots/screenshot1.png)
-!(./assets/screenshots/screenshot2.png)
-!(./assets/screenshots/screenshot3.png)
-!(./assets/screenshots/screenshot4.png)
-
+![](https://github.com/TheMaryJacobs/CodingQuiz/blob/master/assets/Screenshots/screenshot1.png?raw=true)
+![](https://github.com/TheMaryJacobs/CodingQuiz/blob/master/assets/Screenshots/screenshot2.png?raw=true)
+![](https://github.com/TheMaryJacobs/CodingQuiz/blob/master/assets/Screenshots/screenshot3.png?raw=true)
+![](https://github.com/TheMaryJacobs/CodingQuiz/blob/master/assets/Screenshots/screenshot4.png?raw=true)
