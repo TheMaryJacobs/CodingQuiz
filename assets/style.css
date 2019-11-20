@@ -1,9 +1,14 @@
 body{
     background-color: slategrey;
-    font-family: 'Times New Roman', Times, serif;
 }
+.navbar-brand{
+    font-family: 'Calistoga', sans-serif;
+}
+/* style start button  */
 button{
+    font-family: 'Calistoga', sans-serif;
     align-items: center;
+    justify-content: center;
     margin: 5px;
     width: 150px;
     height: 50px;
@@ -11,62 +16,75 @@ button{
     color: white;
 }
 
-#container{
+/* style main container  */
+.container{
     margin : 50px auto;
     align-items: center;
     background-color: white;
-    height: 300px;
+    height: 400px;
     width : 700px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
     position: relative;
 }
 
+
+.instructions{
+    font-family: 'Raleway', sans-serif;
+    margin: 25px auto;
+}
 .start {
-    margin: 15px;
+    margin: auto;
     background-color: salmon;
     font-size: 22px;
     color: white;
     align-items: center;
 }
 
-#start:hover{
+.start:hover{
     color: salmon;
+    background-color: slategrey;
 }
 
-#question{
-    width:500px;
-    height : 125px;
-    position: absolute;
+.question{
+    font-family: 'Calistoga', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
     right:0;
     top:0;
 }
-#question p{
-    margin : 0;
-    padding : 15px;
-    font-size: 1.25em;
-}
 
-#choices{
-    width : 480px;
+.row{
+    align-items: center;
+    justify-content: center;
+}
+.choice-grid{
+    text-align: center;
+    justify-content: center;
+    width : auto;
     position: absolute;
-    right : 0;
-    top : 125px;
-    padding : 10px
+    left: 135px;
+    bottom: 100px;
+    padding : 10px;
 }
 .choice{
-    display: inline-block;
-    width : 135px;
+    font-family: 'Raleway', sans-serif;
+    /* display: inline-block; */
+    width : auto;
+    height: auto;
+    justify-content: center;
     text-align: center;
-    border : 1px solid grey;
+    /* border : 1px solid grey; */
     border-radius: 5px;
     cursor: pointer;
-    padding : 5px;
+    margin: 5px, 5px;
+    /* padding : 5px, 5px; */
 }
 .choice:hover{
-    border : 2px solid grey;
     font-weight: bold;
-    color: #0ac7ae;
+    color: salmon;
 }
 #timer{
     position: absolute;
@@ -76,29 +94,33 @@ button{
     text-align: center;
 }
 #counter{
-    font-size: 3em;
+    font-family: 'Calistoga', sans-serif;
+    font-size: 38px;
+    color: slategrey;
 }
-#btimeGauge{
+.btimeGauge{
     width : 150px;
     height : 10px;
     border-radius: 10px;
     background-color: slategrey;
     margin-left : 25px;
 }
-#timeGauge{
+.timeGauge{
     height : 10px;
     border-radius: 10px;
     background-color:salmon;
     margin-top : -10px;
     margin-left : 25px;
 }
-#progress{
-    width : 500px;
+.progress{
+    background-color: white;
+    width : auto;
     position: absolute;
-    bottom : 0px;
-    right : 0px;
-    padding:5px;
+    bottom : 25px;
+    right : 5px;
+    padding: 15px;
     text-align: right;
+    overflow: visible;
 }
 .prog{
     width : 25px;
@@ -108,30 +130,32 @@ button{
     border-radius: 50%;
     margin-left : 5px;
     margin-right : 5px;
+    margin-bottom: 5px;
 }
-#scoreContainer{
+
+.scoreContainer{
     margin : 50px auto;
     background-color: salmon;
     align-items: center;
     opacity: 0.8;
-    height: 300px;
+    height: 400px;
     width : 700px;
     border-radius: 5px;
-    /* box-shadow: 0px 5px 15px 0px; */
-    position: relative;
-    left: -15px;
+    position: absolute;
+    top: -50px;
+    left: 0px;
     display: none;
 }
 
 
-#scoreContainer p{
+.scoreContainer p{
+    font-family: 'Calistoga', sans-serif;
+    font-size: 42px;
+    color: white;
     position: absolute;
     display: flex;
-    width : auto;
-    height :auto;
-    top:130px;
-    left:300px;
-    font-size: 1.5em;
+    top: 150px;
+    left: 300px;
     font-weight: bold;
     text-align: center;
 }

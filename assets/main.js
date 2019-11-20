@@ -1,5 +1,6 @@
 //define the constant variables based on our HTML elements
 const start = document.getElementById("start");
+const title = document.getElementById("title");
 const instructions = document.getElementById("instructions");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
@@ -16,38 +17,37 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 // create our questions array 
 let questions = [
-    {question : "What is my middle name",
-        choiceA : "Katherine",
-        choiceB : "Ann",
-        choiceC : "Grace",
-        choiceD : "Frances",
-        correct : "D"},
-
-    {question : "How many cats do I have?",
-        choiceA : "None",
-        choiceB : "One",
-        choiceC : "Two",
-        choiceD : "Seven",
+    {question : "Which of the following tags will display paragraph text?",
+        choiceA : "< para >",
+        choiceB : "< a/ >",
+        choiceC : "< p/ >",
+        choiceD : "< graph/ >",
         correct : "C"},
+    {question : "Where do links to stylesheets belong?",
+        choiceA : "< div/ >",
+        choiceB : "< head/ >",
+        choiceC : "< script/ >",
+        choiceD : "< styles >",
+        correct : "B"},
 
-    {question : "Where have I lived?",
-        choiceA : "San Diego",
-        choiceB : "Rome",
-        choiceC : "Edina",
+    {question : "Where do we apply classes?",
+        choiceA : "On HTML objects",
+        choiceB : "within CSS to style",
+        choiceC : "Never in Javascript",
         choiceD : "All of the Above",
         correct : "D"},
-    {question : "What is my favorite sport?",
-      choiceA : "None",
-      choiceB : "Golf",
-      choiceC : "Football",
-      choiceD : "Competitive Cheerleading",
+    {question : "Where is the best place to find bootstrap documentation?",
+      choiceA : "GetBootstrap.com",
+      choiceB : "MDN",
+      choiceC : "W3 Schools",
+      choiceD : "StackOverflow",
       correct : "A"},
-    {question : "What am I on the Board of Directors of?",
-        choiceA : "Lakewinds Food Co-op",
-        choiceB : "YouthFarm",
-        choiceC : "YMCA Camp Warren",
-        choiceD : "None",
-        correct : "C"},
+    {question : "What is href?",
+        choiceA : "Attribute on a link",
+        choiceB : "Used to link in outside information",
+        choiceC : "Connects outside stylesheets to HTML",
+        choiceD : "All of the above",
+        correct : "D"},
   ];
 
 // create some variables
@@ -75,9 +75,10 @@ function renderQuestion(){
 
 start.addEventListener("click",startQuiz);
 
-// start quiz
+// hide the start container elements, display the quiz, and begin the first timer.
 function startQuiz(){
     start.style.display = "none";
+    // title.style.display = "none";
     instructions.style.display ="none";
     renderQuestion();
     quiz.style.display = "block";
@@ -92,7 +93,6 @@ function renderProgress(){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
     }
 }
-console.log(qIndex);
 
 // counter render
 
