@@ -17,31 +17,45 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions array 
 let questions = [
     {
-        question : "What does HTML stand for?",
-        imgSrc : "img/html.png",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "Yes it is",
-        correct : "A"
-    },{
-        question : "What does CSS stand for?",
-        imgSrc : "img/css.png",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
-        choiceD : "Yes it is",
-        correct : "B"
-    },{
-        question : "What does JS stand for?",
-        imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
-        choiceD : "Yes it is",
+        question : "What is my middle name",
+        choiceA : "Katherine",
+        choiceB : "Ann",
+        choiceC : "Grace",
+        choiceD : "Frances",
+        correct : "D"
+    },
+    {
+        question : "How many cats do I have?",
+        choiceA : "None",
+        choiceB : "One",
+        choiceC : "Two",
+        choiceD : "Seven",
         correct : "C"
-    }
-];
+    },
+    {
+        question : "Where have I lived?",
+        choiceA : "San Diego",
+        choiceB : "Rome",
+        choiceC : "Edina",
+        choiceD : "All of the Above",
+        correct : "D"}
+
+//     {
+//       question : "What is my favorite sport?",
+//       choiceA : "None",
+//       choiceB : "Golf",
+//       choiceC : "Football",
+//       choiceD : "Competitive Cheerleading",
+//       correct : "A"}
+//   {
+//     question : "What am I on the Board of Directors of?",
+//     choiceA : "Lakewinds Food Co-op",
+//     choiceB : "YouthFarm",
+//     choiceC : "YMCA Camp Warren",
+//     choiceD : "None",
+//     correct : "C"
+//   }
+  ];
 
 // create some variables
 
@@ -149,6 +163,6 @@ function scoreRender(){
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
     
-    
+
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
