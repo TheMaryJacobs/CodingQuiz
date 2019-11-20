@@ -16,45 +16,38 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 // create our questions array 
 let questions = [
-    {
-        question : "What is my middle name",
+    {question : "What is my middle name",
         choiceA : "Katherine",
         choiceB : "Ann",
         choiceC : "Grace",
         choiceD : "Frances",
-        correct : "D"
-    },
-    {
-        question : "How many cats do I have?",
+        correct : "D"},
+
+    {question : "How many cats do I have?",
         choiceA : "None",
         choiceB : "One",
         choiceC : "Two",
         choiceD : "Seven",
-        correct : "C"
-    },
-    {
-        question : "Where have I lived?",
+        correct : "C"},
+
+    {question : "Where have I lived?",
         choiceA : "San Diego",
         choiceB : "Rome",
         choiceC : "Edina",
         choiceD : "All of the Above",
-        correct : "D"}
-
-//     {
-//       question : "What is my favorite sport?",
-//       choiceA : "None",
-//       choiceB : "Golf",
-//       choiceC : "Football",
-//       choiceD : "Competitive Cheerleading",
-//       correct : "A"}
-//   {
-//     question : "What am I on the Board of Directors of?",
-//     choiceA : "Lakewinds Food Co-op",
-//     choiceB : "YouthFarm",
-//     choiceC : "YMCA Camp Warren",
-//     choiceD : "None",
-//     correct : "C"
-//   }
+        correct : "D"},
+    {question : "What is my favorite sport?",
+      choiceA : "None",
+      choiceB : "Golf",
+      choiceC : "Football",
+      choiceD : "Competitive Cheerleading",
+      correct : "A"},
+    {question : "What am I on the Board of Directors of?",
+        choiceA : "Lakewinds Food Co-op",
+        choiceB : "YouthFarm",
+        choiceC : "YMCA Camp Warren",
+        choiceD : "None",
+        correct : "C"},
   ];
 
 // create some variables
@@ -99,6 +92,7 @@ function renderProgress(){
         progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
     }
 }
+console.log(qIndex);
 
 // counter render
 
@@ -148,12 +142,12 @@ function checkAnswer(answer){
 
 // answer is correct
 function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+    document.getElementById(runningQuestion).style.backgroundColor = "#0ac7ae";
 }
 
 // answer is Wrong
 function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+    document.getElementById(runningQuestion).style.backgroundColor = "#fa7e70";
 }
 
 // score render
